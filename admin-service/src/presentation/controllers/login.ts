@@ -11,7 +11,7 @@ export const loginController = (dependencies:IDependencies) => {
         try{
             const adminCredentails = req.body
             console.log(adminCredentails);
-            console.log("jkjkbhhdfsssssssssbj");
+            console.log("jkjkbhhdfssssssbn  bbbbbbsssbj");
             
             const admin:AdminEntity | null = await loginAdminUseCase(dependencies).execute(adminCredentails)
             if(admin) {
