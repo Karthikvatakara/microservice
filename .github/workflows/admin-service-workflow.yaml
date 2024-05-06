@@ -27,4 +27,4 @@ jobs:
         with:
           context: ./admin-service/
           push: true
-          tags: karthik/ecommerce-admin-service:latest
+          tags: karthik496/ecommerce-admin-service:latest

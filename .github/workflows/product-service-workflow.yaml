@@ -28,4 +28,4 @@ jobs:
         with:
           context: ./product-service/
           push: true
-          tags: karthik/ecommerce-product-service:latest
+          tags: karthik496/ecommerce-product-service:latest

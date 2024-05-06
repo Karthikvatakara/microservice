@@ -27,4 +27,4 @@ jobs:
         with:
           context: ./cart-service/
           push: true
-          tags: karthik/ecommerce-cart-service:latest
+          tags: karthik496/ecommerce-cart-service:latest
