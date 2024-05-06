@@ -10,7 +10,7 @@ export const loginController = (dependencies: IDependencies) => {
         try{
             const userCredentials = req.body;
             const {email,password} = req.body;
-            console.log("====================================")
+            console.log("=========================  =============   ============= ===")
             if(!email || !password) {
                 res.status(400).json({success: false,message:"email and password are required"});
                 return;
