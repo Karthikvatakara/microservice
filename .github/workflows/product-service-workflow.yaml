@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'product-service/**'
-    workflow_dispatch:
+  workflow_dispatch:
 
 
 jobs:
