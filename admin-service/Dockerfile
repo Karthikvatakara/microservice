@@ -12,4 +12,4 @@ RUN npm run build
 
 EXPOSE 8003
 
-CMD [ "npm" , "run" , "dev" ]
+CMD [ "npm" , "start" ]
