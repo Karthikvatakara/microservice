@@ -8,7 +8,7 @@ import dbconnection from "./infrastructure/database/dbconnection";
             console.error("database connection error",error.message);
             process.exit(1);    
         })
-        console.log("admin-service started succesfully");
+        console.log("admin-service started succesfully and DB connected");
     }catch(error:any){
         console.error("admin-server initialization failed",error.meass )
         process.exit(1);
