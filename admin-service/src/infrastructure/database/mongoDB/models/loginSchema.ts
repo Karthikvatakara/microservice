@@ -1,0 +1,29 @@
+import mongoose,{Schema,Document,model} from "mongoose";
+
+const adminSchema = new Schema ({
+    username: {
+        type: String,
+        required: true,
+    },
+    email:{
+        type: String,
+        required: true,
+    },
+    password: {
+        type: String,
+        required: true,
+    },
+    role: {
+        type: String,
+        enum:["user","admin"],
+        default: "user",
+    },
+    isBlocked: {
+        type: Boolean,
+        default: false,
+    }
+},{
+    timestamps: true
+})
+
+export const Admin = mongoose.model("loginCredentials",adminSchema)

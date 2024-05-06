@@ -1,0 +1,14 @@
+import { Router } from "express";
+import { IDependencies } from "../../application/interfaces/IDependency";
+import { controllers } from "../../presentation/controllers";
+
+export const addProduct = (dependencies:IDependencies) => {
+    const { addProduct,listProduct} = controllers(dependencies);
+
+    const router = Router();
+
+    router.route("/addproduct").post(addProduct);
+    router.route('/products').get(listProduct);
+
+    return router;
+}
