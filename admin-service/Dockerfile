@@ -1,4 +1,4 @@
-FROM node:20.5.0
+FROM node:alpine
 
 WORKDIR /app
 
@@ -7,6 +7,8 @@ COPY package.json .
 RUN npm install
 
 COPY . .
+
+RUN npm run build
 
 EXPOSE 8003
 
