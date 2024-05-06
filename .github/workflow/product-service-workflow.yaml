@@ -6,6 +6,8 @@ on:
       - main
     paths:
       - 'product-service/**'
+    workflow_dispatch:
+
 
 jobs:
   push_to_registry:
